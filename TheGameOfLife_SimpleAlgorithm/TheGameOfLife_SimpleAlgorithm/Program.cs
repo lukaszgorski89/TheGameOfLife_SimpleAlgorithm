@@ -5,15 +5,13 @@ namespace TheGameOfLife_SimpleAlgorithm
 {
     class Program
     {
-        private static int moveCounter = 15;
-        private const int arrayHeight = 20;
-        private const int arrayWidth = 47;
-
         static void Main()
         {
-            var initialState = PrepareInputData(arrayHeight, arrayWidth);
+            var inputReader = new InputOutput.ConsoleInputReader();
+            var input = inputReader.GetInputData();
+
             var executor = new MoveExecutor();
-            var result = executor.MakeNMoves(initialState, moveCounter);
+            var result = executor.MakeNMoves(input.InitialStateArray, input.MoveCounter);
 
             for (int i = 0; i <= result.GetUpperBound(0); i++)
             {
@@ -26,17 +24,6 @@ namespace TheGameOfLife_SimpleAlgorithm
             }
 
             Console.ReadLine();
-        }
-
-        private static int[,] PrepareInputData(int arrayHeight, int arrayWidth)
-        {
-            var result = new int[arrayHeight, arrayWidth];
-            result[0, 1] = 1;
-            result[1, 2] = 1;
-            result[2, 0] = 1;
-            result[2, 1] = 1;
-            result[2, 2] = 1;
-            return result;
         }
     }
 }

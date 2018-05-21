@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TheGameOfLife
+﻿namespace TheGameOfLife
 {
     public class MoveExecutor : IMove
     {
@@ -22,13 +20,13 @@ namespace TheGameOfLife
 
         private int[,] MakeMove(int[,] currentState)
         {
-            var arrayHeight = currentState.GetUpperBound(0) + 1;
-            var arrayWidth = currentState.GetUpperBound(1) + 1;
-            var result = new int[arrayHeight,arrayWidth];
+            var heightIndex = currentState.GetUpperBound(0) + 1;
+            var widthIndex = currentState.GetUpperBound(1) + 1;
+            var result = new int[heightIndex, widthIndex];
 
-            for (int i = 0; i < arrayHeight; i++)
+            for (int i = 0; i < heightIndex; i++)
             {
-                for (int j = 0; j < arrayWidth; j++)
+                for (int j = 0; j < widthIndex; j++)
                 {
                     var neighbourCounter = GetNeighbourCounter(i, j, currentState);
                     if (currentState[i, j] == 0)

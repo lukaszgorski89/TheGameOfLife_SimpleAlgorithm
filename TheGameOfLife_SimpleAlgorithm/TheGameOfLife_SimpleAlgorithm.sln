@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGameOfLife_SimpleAlgorit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGameOfLife", "TheGameOfLife\TheGameOfLife.csproj", "{0A288B83-346A-4C23-BB53-DD2AF45655FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOutput", "InputOutput\InputOutput.csproj", "{6D30CEA7-9818-4381-AFB3-9A10B11BCCB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0A288B83-346A-4C23-BB53-DD2AF45655FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A288B83-346A-4C23-BB53-DD2AF45655FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A288B83-346A-4C23-BB53-DD2AF45655FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D30CEA7-9818-4381-AFB3-9A10B11BCCB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D30CEA7-9818-4381-AFB3-9A10B11BCCB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D30CEA7-9818-4381-AFB3-9A10B11BCCB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D30CEA7-9818-4381-AFB3-9A10B11BCCB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

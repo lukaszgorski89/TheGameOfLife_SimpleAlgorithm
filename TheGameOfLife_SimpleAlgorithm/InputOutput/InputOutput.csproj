@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E21BB856-C37E-41DB-92CC-20D46520A6E1}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>TheGameOfLife_SimpleAlgorithm</RootNamespace>
-    <AssemblyName>TheGameOfLife_SimpleAlgorithm</AssemblyName>
+    <ProjectGuid>{6D30CEA7-9818-4381-AFB3-9A10B11BCCB8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InputOutput</RootNamespace>
+    <AssemblyName>InputOutput</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,21 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="ConsoleInputReader.cs" />
+    <Compile Include="IInputReader.cs" />
+    <Compile Include="Cell.cs" />
+    <Compile Include="InputData.cs" />
+    <Compile Include="InputStringData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\InputOutput\InputOutput.csproj">
-      <Project>{6d30cea7-9818-4381-afb3-9a10b11bccb8}</Project>
-      <Name>InputOutput</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TheGameOfLife\TheGameOfLife.csproj">
-      <Project>{0a288b83-346a-4c23-bb53-dd2af45655fe}</Project>
-      <Name>TheGameOfLife</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

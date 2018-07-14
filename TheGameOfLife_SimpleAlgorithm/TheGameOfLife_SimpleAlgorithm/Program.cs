@@ -7,7 +7,6 @@ namespace TheGameOfLife_SimpleAlgorithm
     {
         static void Main()
         {
-            ci pipeline check
             var inputReader = new InputOutput.ConsoleInputReader();
             var input = inputReader.GetInputData();
 

@@ -2,12 +2,7 @@
 {
     public class MoveExecutor : IMove
     {
-        public int[,] MakeOneMove(int[,] currentState)
-        {
-            return MakeNMoves(currentState, 1);
-        }
-
-        public int[,] MakeNMoves(int[,] currentState, int moveCount)
+        public int[,] MakeMoves(int[,] currentState, int moveCount)
         {
             var result = currentState;
             for (int i = 0; i < moveCount; i++)

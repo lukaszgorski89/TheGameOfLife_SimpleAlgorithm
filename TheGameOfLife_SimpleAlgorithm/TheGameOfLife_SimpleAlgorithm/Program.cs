@@ -11,7 +11,7 @@ namespace TheGameOfLife_SimpleAlgorithm
             var input = inputReader.GetInputData();
 
             var executor = new MoveExecutor();
-            var result = executor.MakeNMoves(input.InitialStateArray, input.MoveCounter);
+            var result = executor.MakeMoves(input.InitialStateArray, input.MoveCounter);
 
             for (int i = 0; i <= result.GetUpperBound(0); i++)
             {

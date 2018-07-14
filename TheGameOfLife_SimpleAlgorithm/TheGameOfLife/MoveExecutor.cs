@@ -1,11 +1,11 @@
 ﻿namespace TheGameOfLife
 {
-    public class MoveExecutor : IMove
+    public class MoveExecutor
     {
-        public int[,] MakeMoves(int[,] currentState, int moveCount)
+        public int[,] MakeMoves(IInputData inputData)
         {
-            var result = currentState;
-            for (int i = 0; i < moveCount; i++)
+            var result = inputData.CurrentState;
+            for (int i = 0; i < inputData.MoveCount; i++)
             {
                 result = MakeMove(result);
             }

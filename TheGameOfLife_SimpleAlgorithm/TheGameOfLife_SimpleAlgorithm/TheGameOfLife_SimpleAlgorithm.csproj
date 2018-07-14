@@ -49,10 +49,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InputOutput\InputOutput.csproj">
-      <Project>{6d30cea7-9818-4381-afb3-9a10b11bccb8}</Project>
-      <Name>InputOutput</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TheGameOfLife\TheGameOfLife.csproj">
       <Project>{0a288b83-346a-4c23-bb53-dd2af45655fe}</Project>
       <Name>TheGameOfLife</Name>

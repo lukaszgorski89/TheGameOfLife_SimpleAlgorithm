@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="ConsoleInputReader.cs" />
     <Compile Include="IInputReader.cs" />
-    <Compile Include="Cell.cs" />
     <Compile Include="InputData.cs" />
     <Compile Include="InputStringData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,7 +6,7 @@ namespace TheGameOfLife_SimpleAlgorithm
     class Program
     {
         static void Main()
-        { check it once again
+        { //check it once again
             var inputReader = new InputOutput.ConsoleInputReader();
             var input = inputReader.GetInputData();
 

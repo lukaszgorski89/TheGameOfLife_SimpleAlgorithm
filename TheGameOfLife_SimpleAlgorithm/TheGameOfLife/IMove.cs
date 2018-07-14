@@ -2,8 +2,6 @@
 {
     public interface IMove
     {
-        int[,] MakeOneMove(int[,] currentState);
-
-        int[,] MakeNMoves(int[,] currentState, int moveCount);
+        int[,] MakeMoves(int[,] currentState, int moveCount);
     }
 }

@@ -26,7 +26,7 @@ namespace TheGameOfLife.Tests
             initialStateMock.CurrentState[1, 2] = 1;
             initialStateMock.CurrentState[2, 0] = 1;
             initialStateMock.CurrentState[2, 1] = 1;
-            initialStateMock.CurrentState[2, 2] = 1;
+            initialStateMock.CurrentState[2, 2] = 0;
             initialStateMock.MoveCount = 15;
 
             // act
